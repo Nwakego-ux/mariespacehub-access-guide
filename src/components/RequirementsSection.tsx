@@ -15,7 +15,7 @@ const requirements = [
     cost: "₦5,000 - ₦15,000 setup"
   },
   {
-    title: "Foreign Phone Number",
+    title: "Foreign Number",
     description: "International number for account verification",
     details: [
       "US/UK virtual phone number",
@@ -27,11 +27,23 @@ const requirements = [
     cost: "$2 - $10/month"
   },
   {
-    title: "Professional Email",
+    title: "VPN (Important)",
+    description: "Virtual Private Network for location masking",
+    details: [
+      "Premium VPN service (avoid free ones)",
+      "US/UK server locations required",
+      "Recommended: ExpressVPN, NordVPN, Surfshark",
+      "Stable connection essential for tool access"
+    ],
+    priority: "Critical",
+    cost: "$3 - $12/month"
+  },
+  {
+    title: "Email",
     description: "Clean email address for account creation",
     details: [
       "Gmail, Outlook, or custom domain email",
-      "Should not be associated with banned accounts",
+      "Should not be associated with banned accounts", 
       "Professional looking address recommended",
       "Enable 2FA for security"
     ],
@@ -53,7 +65,7 @@ const RequirementsSection = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
           {requirements.map((req, index) => (
             <Card key={req.title} className="gradient-card shadow-card border-border/50 p-6 relative overflow-hidden">
               {/* Priority Badge */}
