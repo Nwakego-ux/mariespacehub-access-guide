@@ -10,14 +10,14 @@ const tools = [
     restrictions: "US/Canada only, requires US payment method"
   },
   {
-    name: "RetailAI",
+    name: "RetellAI",
     description: "Advanced AI-powered e-commerce optimization and automation platform",
     features: ["AI Product Recommendations", "Inventory Optimization", "Price Analytics", "Customer Insights"],
     pricing: "$199-$999/month", 
     restrictions: "Restricted in Nigeria, requires international verification"
   },
   {
-    name: "Skool",
+    name: "Voice Agents",
     description: "Community platform for creators to build and monetize online communities",
     features: ["Community Building", "Course Creation", "Payment Processing", "Analytics Dashboard"],
     pricing: "$99/month",

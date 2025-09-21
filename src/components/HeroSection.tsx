@@ -26,7 +26,7 @@ const HeroSection = () => {
           </p>
           
           <p className="text-lg md:text-xl mb-8 text-muted-foreground max-w-2xl mx-auto">
-            Get unrestricted access to GoHighLevel, RetailAI, Skool, and other premium international tools. 
+            Get unrestricted access to GoHighLevel, RetellAI, Voice Agents, and other premium international tools. 
             Complete step-by-step guide with all requirements.
           </p>
 
