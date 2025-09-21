@@ -1,5 +1,6 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 import { ArrowRight, Clock } from "lucide-react";
 
 const steps = [
@@ -109,9 +110,11 @@ const ProcessSection = () => {
                     </div>
 
                     <div className="flex-shrink-0">
-                      <Button variant="outline" size="sm" className="group">
-                        Get Guide
-                        <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                      <Button variant="outline" size="sm" className="group" asChild>
+                        <Link to="/guide">
+                          Get Guide
+                          <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                        </Link>
                       </Button>
                     </div>
                   </div>
@@ -128,8 +131,8 @@ const ProcessSection = () => {
             <p className="text-muted-foreground mb-6">
               Join hundreds of Nigerians already using these premium tools
             </p>
-            <Button variant="accent" size="lg" className="text-lg px-8">
-              Start Your Journey
+            <Button variant="accent" size="lg" className="text-lg px-8" asChild>
+              <Link to="/get-started">Start Your Journey</Link>
             </Button>
           </Card>
         </div>

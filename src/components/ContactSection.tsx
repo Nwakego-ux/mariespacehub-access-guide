@@ -1,5 +1,6 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 import { Mail, MessageCircle, Phone, Shield } from "lucide-react";
 
 const contactMethods = [
@@ -56,8 +57,8 @@ const ContactSection = () => {
                     <p className="text-muted-foreground text-sm mb-4">{method.description}</p>
                   </div>
 
-                  <Button variant="outline" className="w-full">
-                    {method.action}
+                  <Button variant="outline" className="w-full" asChild>
+                    <Link to="/contact">{method.action}</Link>
                   </Button>
                 </div>
               </Card>
@@ -90,11 +91,11 @@ const ContactSection = () => {
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                <Button variant="hero" size="lg" className="text-lg px-8 py-3">
-                  Get Complete Access Guide
+                <Button variant="hero" size="lg" className="text-lg px-8 py-3" asChild>
+                  <Link to="/get-started">Get Complete Access Guide</Link>
                 </Button>
-                <Button variant="outline" size="lg" className="text-lg px-8 py-3">
-                  Schedule Free Consultation
+                <Button variant="outline" size="lg" className="text-lg px-8 py-3" asChild>
+                  <Link to="/contact">Schedule Free Consultation</Link>
                 </Button>
               </div>
 

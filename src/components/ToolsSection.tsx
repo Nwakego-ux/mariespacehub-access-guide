@@ -1,5 +1,6 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const tools = [
   {
@@ -71,8 +72,8 @@ const ToolsSection = () => {
                   </div>
                 </div>
 
-                <Button variant="outline" className="w-full mt-4">
-                  Learn Access Method
+                <Button variant="outline" className="w-full mt-4" asChild>
+                  <Link to="/guide">Learn Access Method</Link>
                 </Button>
               </div>
             </Card>
