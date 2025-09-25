@@ -58,7 +58,19 @@ const ContactSection = () => {
                   </div>
 
                   <Button variant="outline" className="w-full" asChild>
-                    <Link to="/contact">{method.action}</Link>
+                    {index === 0 ? (
+                      <a href="https://wa.me/+2348103114589" target="_blank" rel="noopener noreferrer">
+                        {method.action}
+                      </a>
+                    ) : index === 1 ? (
+                      <a href="mailto:marianaokafor7@gmail.com">
+                        {method.action}
+                      </a>
+                    ) : (
+                      <a href="mailto:marianaokafor7@gmail.com?subject=1-on-1 Setup Call Request">
+                        {method.action}
+                      </a>
+                    )}
                   </Button>
                 </div>
               </Card>

@@ -145,8 +145,20 @@ const Contact = () => {
                       </div>
                     </div>
                     
-                    <Button className="w-full" variant={index === 0 ? "default" : "outline"}>
-                      {method.action}
+                    <Button className="w-full" variant={index === 0 ? "default" : "outline"} asChild>
+                      {index === 0 ? (
+                        <a href="https://wa.me/+2348103114589" target="_blank" rel="noopener noreferrer">
+                          {method.action}
+                        </a>
+                      ) : index === 1 ? (
+                        <a href="mailto:marianaokafor7@gmail.com">
+                          {method.action}
+                        </a>
+                      ) : (
+                        <a href="mailto:marianaokafor7@gmail.com?subject=Phone Consultation Request">
+                          {method.action}
+                        </a>
+                      )}
                     </Button>
                   </Card>
                 );
@@ -160,7 +172,7 @@ const Contact = () => {
                 <h2 className="text-2xl font-bold">Send Us a Message</h2>
               </div>
               
-              <form className="space-y-6">
+              <form className="space-y-6" action="mailto:marianaokafor7@gmail.com" method="post" encType="text/plain">
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
                     <Label htmlFor="name">Your Name</Label>
